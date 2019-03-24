@@ -9,13 +9,15 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.view.View;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac  tivity_main);
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,18 +29,24 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        Button indi = findViewById(R.id.btnIndividual);
-        indi.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                setContentView(R.layout.individual);
-            }
-        });
-        Button group = findViewById(R.id.btnGroup);
-        group.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                setContentView(R.layout.group);
-            }
-        });
+        public void sendMessage(View view)
+        {
+            Intent intent = new Intent(FromActivity.this, ToActivity.class);
+            startActivity(intent);
+        }
+//        Button indi = findViewById(R.id.btnIndividual);
+//        indi.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, IndividualActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        Button group = findViewById(R.id.btnGroup);
+//        group.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                setContentView(R.layout.group);
+//            }
+//        });
 //        Button next1 = findViewById(R.id.btnNext1);
 //        next1.setOnClickListener(new View.OnClickListener() {
 //            public void onClick(View v) {
@@ -48,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 //        Button next2 = findViewById(R.id.btnNext2);
 //        next2.setOnClickListener(new View.OnClickListener() {
 //            public void onClick(View v) {
-//                setContentView(R.layout.individual);
+//                setContentView(R.layout.activity_individual);
 //            }
 //        });
     }

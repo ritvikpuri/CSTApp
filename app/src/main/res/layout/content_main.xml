@@ -11,48 +11,58 @@
 
     <Button
         android:id="@+id/btnGroup"
-        android:layout_width="340dp"
-        android:layout_height="183dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="41dp"
         android:text="Group Session (Encouraged and Guided)"
+        app:layout_constraintBottom_toTopOf="@+id/btnIndividual"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/btnIndividual"
-        android:layout_width="340dp"
-        android:layout_height="183dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="164dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="58dp"
         android:text="Individual Session"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:onClick=""
+        app:layout_constraintBottom_toTopOf="@+id/btnInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGroup" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="201dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="22dp"
         android:text="CST App"
         android:textSize="37sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGroup"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnInfo"
         android:layout_width="95dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="40dp"
         android:text="Info"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIndividual" />
 
     <!--<android.support.constraint.Constraints-->
-        <!--android:id="@+id/constraints"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content" />-->
+    <!--android:id="@+id/constraints"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
 
 </android.support.constraint.ConstraintLayout>
