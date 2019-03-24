@@ -29,37 +29,24 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        public void sendMessage(View view)
-        {
-            Intent intent = new Intent(FromActivity.this, ToActivity.class);
-            startActivity(intent);
-        }
-//        Button indi = findViewById(R.id.btnIndividual);
-//        indi.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, IndividualActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        Button group = findViewById(R.id.btnGroup);
-//        group.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                setContentView(R.layout.group);
-//            }
-//        });
-//        Button next1 = findViewById(R.id.btnNext1);
-//        next1.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                setContentView(R.layout.group2);
-//            }
-//        });
-//        Button next2 = findViewById(R.id.btnNext2);
-//        next2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                setContentView(R.layout.activity_individual);
-//            }
-//        });
+
+        Button indi = findViewById(R.id.btnIndividual);
+        indi.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, IndividualActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button group = findViewById(R.id.btnGroup);
+        group.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GroupActivity1.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

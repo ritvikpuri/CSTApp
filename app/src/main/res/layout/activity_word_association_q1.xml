@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordAssociationQ1">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="310dp"
+        android:layout_height="382dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/dog" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="26dp"
+        android:text="Round 1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIncorrect1"
+        android:layout_width="134dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="42dp"
+        android:text="Cat"
+        app:layout_constraintBottom_toTopOf="@+id/btnCorrect"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIncorrect2"
+        android:layout_width="127dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="40dp"
+        android:text="Horse"
+        app:layout_constraintBottom_toTopOf="@+id/btnIncorrect3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCorrect"
+        android:layout_width="129dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="45dp"
+        android:text="Dog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIncorrect3"
+        android:layout_width="125dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="44dp"
+        android:text="Fish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

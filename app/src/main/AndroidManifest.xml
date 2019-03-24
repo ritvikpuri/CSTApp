@@ -9,9 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NumberGameQ1"></activity>
+        <activity android:name=".NumberGameIntro" />
+        <activity android:name=".WordAssociationEnd" />
+        <activity android:name=".WordAssociationQ5" />
+        <activity android:name=".WordAssociationQ4" />
+        <activity android:name=".WordAssociationQ3" />
+        <activity android:name=".WordAssociationQ2" />
+        <activity android:name=".WordAssociationIntro" />
+        <activity android:name=".WordAssociationQ1" />
+        <activity android:name=".GroupActivity2" />
         <activity
-            android:name=".IndividualActivity">
-        </activity>
+            android:name=".GroupActivity1"
+            android:label="CST App" />
+        <activity
+            android:name=".IndividualActivity"
+            android:label="CST App" />
         <activity
             android:name=".MainActivity"
             android:label="CST App"
